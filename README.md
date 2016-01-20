@@ -14,7 +14,9 @@ TDD eventually - as opposed to the common TDD-denier opinion - gives you the abi
 
 ## How to start
 
-If the above made you excited, then clone the repo and run `npm install` in the project folder, then `npm run start-dev` to start developing and to write your first test case under `test` folder in `CommonJS` format.
+If the above made you excited, then clone the repo and run `npm install` in the project folder, then `npm run start-dev -s` in a terminal window and `npm run karma-start -s -- --browsers Chrome` in another one to start developing and to write your first test case under `test` folder in `CommonJS` format.
+
+Whenever you change a file (either Javascript or HTML) it will trigger Karma to run the test suite. You can either connect a mobile (or any other) browser via opening `1.2.3.4:9876` IP address (where 1.2.3.4 is the computer's IP address you're running the Karma server on).
 
 Check `localhost:3000` in your default browser to see the results.
 
@@ -219,6 +221,6 @@ test/
 			behaviour-2.spec.js
 ```
 
-Run `npm run start-dev -s` to start practicing! :)
+Run `npm run start-dev -s` in a terminal window and `npm run karma-start -s -- --browsers Chrome` in another one to start practicing! :)
 
 *NOTE: `-s` flag is used to tell `npm` to suppress its verbose output when running tasks*
