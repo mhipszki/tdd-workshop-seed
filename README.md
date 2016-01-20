@@ -2,6 +2,8 @@
 
 This project can help you to practice TDD quickly start writing tests against the first features of your imagined *front-end Javascript* app, providing an automated workflow and tools to get immediate feedback when changing test or production code.
 
+![redgreenrefacor](https://cloud.githubusercontent.com/assets/220661/12453468/42764430-bf8b-11e5-8c6d-661f0dd6a90c.png)
+
 ## Immediate feedback
 
 Immediate feedback is essential when using the test-first approach, you must be notified on each file save if your change has moved you forward or not.
