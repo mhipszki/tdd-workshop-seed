@@ -1,0 +1,5 @@
+#!/bin/bash
+parallelshell \
+"npm run lint-config -s" \
+"npm run lint-source -s" \
+"npm run lint-tests -s"

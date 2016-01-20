@@ -1,0 +1,6 @@
+#!/bin/bash
+npm run clean-build-dist -s && \
+mkdir -p build/dist && \
+npm run bundle-js-dist -s && \
+cp src/index.html build/dist/ && \
+echo '✔ DIST build COMPLETED'

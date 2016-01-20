@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# NOTE: you have to manually stop the spawned processes as parallelshell does not take care about that
+# to see the running processes use `ps -ax | grep live` and `ps -ax | grep serve`
+# to stop the processes use `kill -SIGTERM PID`
+
+parallelshell "npm run serve -s" "npm run watch -s"

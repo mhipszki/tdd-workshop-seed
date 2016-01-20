@@ -1,0 +1,3 @@
+#!/bin/bash
+eslint config && \
+echo '✔ linted config files'

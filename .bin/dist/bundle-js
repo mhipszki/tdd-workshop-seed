@@ -1,0 +1,3 @@
+#!/bin/bash
+browserify -e src/app.js -t stringify -g uglifyify > build/dist/app.js && \
+echo '✔ DIST bundled Javascript'

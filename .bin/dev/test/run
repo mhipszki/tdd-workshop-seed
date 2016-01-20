@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# starts Karma server and runs unit test suite once in PhantomJS
+
+# $ npm run test -- --browsers Chrome,Firefox
+# to override browsers from CLI run this script
+
+npm run lint-tests -s && \
+npm run lint-source -s && \
+karma start config/karma.conf.js --single-run --browsers PhantomJS

@@ -1,0 +1,3 @@
+#!/bin/bash
+rimraf build/dev/ && \
+echo '✔ cleaned build/dev/ folder'

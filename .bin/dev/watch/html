@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# watching .html files under src/ and runs tests on file change
+
+nodemon -q -e html -w src --exec 'npm run karma -s'

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# watching .js files under config/ and runs linting on them on file change
+
+nodemon -q -e js -w config --exec 'npm run lint-config -s'

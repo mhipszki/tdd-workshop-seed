@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# watching .js files under src/ runs tests on file change
+
+nodemon -q -e js -w src --exec 'npm run lint-source -s && npm run karma -s'

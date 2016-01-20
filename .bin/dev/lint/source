@@ -1,0 +1,3 @@
+#!/bin/bash
+eslint src/scripts && \
+echo '✔ linted Javascript source'

@@ -1,0 +1,6 @@
+#!/bin/bash
+npm run clean-build-dev -s && \
+mkdir -p build/dev && \
+npm run bundle-js -s && \
+cp src/index.html build/dev/ && \
+echo '✔ build COMPLETED'

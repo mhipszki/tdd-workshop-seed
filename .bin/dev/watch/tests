@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# watching .js files under test/ and runs tests on file change
+
+nodemon -q -e js -w test --exec 'npm run lint-tests -s && npm run karma -s'

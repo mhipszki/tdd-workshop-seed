@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# starts Karma server
+# tests can be run via `npm run karma` task in a separate terminal window
+
+# $ npm run start-karma-server -- --browsers Chrome,Firefox
+# to open and run tests in specific browsers on your dev box
+
+# or open http://localhost:9876/ in any browser on your dev box
+
+# or open http://your.local.ip.address:9876/ on any device,
+# provided they're on the same local network as your dev box
+karma start config/karma.conf.js --no-single-run $@

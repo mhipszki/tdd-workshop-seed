@@ -1,0 +1,3 @@
+#!/bin/bash
+browserify -e src/app.js -d -t stringify | exorcist build/dev/app.js.map > build/dev/app.js && \
+echo '✔ bundled Javascript'

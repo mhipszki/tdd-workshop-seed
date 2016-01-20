@@ -1,0 +1,2 @@
+#!/bin/bash
+browser-sync start --config config/dev/browser-sync.conf.js

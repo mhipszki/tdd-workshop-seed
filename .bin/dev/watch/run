@@ -1,0 +1,6 @@
+#!/bin/bash
+parallelshell \
+"npm run watch-config -s" \
+"npm run watch-source -s" \
+"npm run watch-html -s" \
+"npm run watch-tests -s"

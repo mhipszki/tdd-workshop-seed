@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# triggers Karma server to run unit test suite in all connected browsers
+
+# NOTE: Karma server needs to be run first to use this task (npm run karma-server)
+# NOTE: output is redirected to /dev/null in order to suppress duplicate test results output
+
+echo "running unit tests via Karma" && \
+karma run >/dev/null 2>&1
