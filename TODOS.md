@@ -1,6 +1,5 @@
 # Requirements
 
-+ the game should be a function
 - The function should return the game's outcome as string
 - The function should have 2 string inputs (shapes)
 
