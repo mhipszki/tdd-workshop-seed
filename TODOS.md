@@ -5,7 +5,8 @@
 - The function should have 2 string inputs (shapes)
 
 Examples:
-+ input 1 is rock and input 2 is rock: output should be tie
++ rock:rock = tie
++ paper:rock = p1
 
 - 2 players
 - 3 shapes : rock, paper, scissors
