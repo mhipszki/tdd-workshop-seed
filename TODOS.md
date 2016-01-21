@@ -13,6 +13,7 @@ Examples:
 + scissors:rock = p2
 + paper:scissors = p2
 
+
 Refactor ideas:
 - group the tests based on outcome
 
@@ -24,3 +25,10 @@ Refactor ideas:
 	+ scissors beats paper
 	+ paper beats rock
 	+ same chosen shapes is a tie
+	- lizard beats spock
+	- lizard beats paper
+	- scissors beats lizard
+	- rock beats lizard
+	- spock beats scissors
+	- spock beats rock
+	- paper beats spock
