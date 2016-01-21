@@ -10,12 +10,12 @@ Examples:
 + rock:scissors = p1
 + scissors:rock = p2
 - rock:paper = p2
-- scissors:paper = p1
++ scissors:paper = p1
 
 - 2 players
 - 3 shapes : rock, paper, scissors
 - outcomes : P1, P2, Tie
-- rules :
++ rules :
 	- rock beats scissors
 	- scissors beats paper
 	- paper beats rock
