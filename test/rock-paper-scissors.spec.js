@@ -10,6 +10,9 @@ function game(p1, p2) {
 	if (p1 === 'scissors' && p2 === 'rock'){
 		return 'P2';
 	}
+	if (p1 === 'rock' && p2 === 'scissors'){
+		return 'P1';
+	}
 }
 
 describe('rock paper scissors game', function () {
@@ -27,4 +30,7 @@ describe('rock paper scissors game', function () {
 		expect(game('scissors', 'rock')).to.equal('P2');
 	});
 
+	it('should result in P1 winning if p1 plays rock and p2 plays scissors', function () {
+		expect(game('rock', 'scissors')).to.equal('P1');
+	});
 });
