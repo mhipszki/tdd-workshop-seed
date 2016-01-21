@@ -1,10 +1,22 @@
 'use strict';
 
-function isLeapYear(input) {
-	if (input % 100 === 0) {
-		return input % 400 === 0;
-	}
+function isDivisibleBy4(input) {
 	return input % 4 === 0;
+}
+
+function isDivisibleBy100(input) {
+	return input % 100 === 0;
+}
+
+function isDivisibleBy400(input) {
+	return input % 400 === 0;
+}
+
+function isLeapYear(input) {
+	if (isDivisibleBy100(input)) {
+		return isDivisibleBy400(input);
+	}
+	return isDivisibleBy4(input);
 }
 
 describe.only('isLeapYear', function () {
