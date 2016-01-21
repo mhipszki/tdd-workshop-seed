@@ -27,7 +27,7 @@ Refactor ideas:
 	+ same chosen shapes is a tie
 	+ lizard beats spock
 	+ lizard beats paper
-	- scissors beats lizard
+	+ scissors beats lizard
 	- rock beats lizard
 	- spock beats scissors
 	- spock beats rock

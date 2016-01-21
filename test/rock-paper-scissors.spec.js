@@ -3,6 +3,9 @@
 function lizardWinsOver(p2) {
 	return (p2 === 'spock' || p2 === 'paper');
 }
+function scissorsWinsOver(p2) {
+	return (p2 === 'lizard' || p2 === 'paper');
+}
 
 function game(p1, p2) {
 	if (p1 === p2){
@@ -12,9 +15,11 @@ function game(p1, p2) {
 	if (p1 === 'lizard' && lizardWinsOver(p2))  {
 		return 'P1';
 	}
+	if (p1 === 'scissors' && scissorsWinsOver(p2))  {
+		return 'P1';
+	}
 	if ((p1 === 'paper' && p2 === 'rock')
 		|| (p1 === 'rock' && p2 === 'scissors')
-		|| (p1 === 'scissors' && p2 === 'paper')
 	) {
 		return 'P1';
 	}
@@ -38,6 +43,10 @@ describe('rock paper scissors game', function () {
 
 	it('should result in P1 winning if p1 plays scissors and p2 plays paper', function () {
 		expect(game('scissors', 'paper')).to.equal('P1');
+	});
+
+	it('should result in P1 winning if p1 plays scissors and p2 plays lizard', function () {
+		expect(game('scissors', 'lizard')).to.equal('P1');
 	});
 
 	it('should result in P1 winning if p1 plays lizard and p2 plays spock', function () {
