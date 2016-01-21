@@ -1,11 +1,7 @@
 'use strict';
 
-function lizardWinsOver(p2, losers) {
+function winsOver(p2, losers) {
 	return losers.indexOf(p2) > -1;
-}
-
-function scissorsWinsOver(p2) {
-	return (p2 === 'lizard' || p2 === 'paper');
 }
 
 function game(p1, p2) {
@@ -13,10 +9,10 @@ function game(p1, p2) {
 		return 'tie';
 	}
 
-	if (p1 === 'lizard' && lizardWinsOver(p2, ['spock', 'paper']))  {
+	if (p1 === 'lizard' && winsOver(p2, ['spock', 'paper']))  {
 		return 'P1';
 	}
-	if (p1 === 'scissors' && scissorsWinsOver(p2))  {
+	if (p1 === 'scissors' && winsOver(p2, ['lizard', 'paper']))  {
 		return 'P1';
 	}
 	if ((p1 === 'paper' && p2 === 'rock')
