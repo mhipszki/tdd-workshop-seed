@@ -6,9 +6,11 @@
 
 Examples:
 + rock:rock = tie
-+ paper:rock = p1
-+ scissors:rock = p2
 + scissors:scissors = tie
++ paper:rock = p1
+- rock:scissors = p1
++ scissors:rock = p2
+- rock:paper = p2
 
 - 2 players
 - 3 shapes : rock, paper, scissors

@@ -18,11 +18,8 @@ describe('rock paper scissors game', function () {
 		expect(game).to.be.instanceof(Function);
 	});
 
-	it('should return tie if input 1 is rock and input 2 is rock', function () {
+	it('should return tie when the two shapes are the same', function () {
 		expect(game('rock', 'rock')).to.equal('tie');
-	});
-
-	it('should return tie if input 1 is scissors and input 2 is scissors', function () {
 		expect(game('scissors', 'scissors')).to.equal('tie');
 	});
 
