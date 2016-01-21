@@ -15,18 +15,18 @@ Examples:
 
 
 Refactor ideas:
-- group the tests based on outcome
+- Generalize the rules processing in production code
 
 + 2 players
-- 3 shapes : rock, paper, scissors
+- 5 shapes : rock, paper, scissors, lizard, spock
 + outcomes : P1, P2, tie
 + rules :
 	+ rock beats scissors
 	+ scissors beats paper
 	+ paper beats rock
 	+ same chosen shapes is a tie
-	- lizard beats spock
-	- lizard beats paper
+	+ lizard beats spock
+	+ lizard beats paper
 	- scissors beats lizard
 	- rock beats lizard
 	- spock beats scissors

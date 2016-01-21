@@ -7,6 +7,8 @@ function game(p1, p2) {
 	if ((p1 === 'paper' && p2 === 'rock')
 		|| (p1 === 'rock' && p2 === 'scissors')
 		|| (p1 === 'scissors' && p2 === 'paper')
+		|| (p1 === 'lizard' && p2 === 'spock')
+		|| (p1 === 'lizard' && p2 === 'paper')
 	) {
 		return 'P1';
 	}
@@ -30,6 +32,14 @@ describe('rock paper scissors game', function () {
 
 	it('should result in P1 winning if p1 plays scissors and p2 plays paper', function () {
 		expect(game('scissors', 'paper')).to.equal('P1');
+	});
+
+	it('should result in P1 winning if p1 plays lizard and p2 plays spock', function () {
+		expect(game('lizard', 'spock')).to.equal('P1');
+	});
+
+	it('should result in P1 winning if p1 plays lizard and p2 plays paper', function () {
+		expect(game('lizard', 'paper')).to.equal('P1');
 	});
 
 	it('should result in P2 winning if p1 plays scissors and p2 plays rock', function () {
