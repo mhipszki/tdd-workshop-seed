@@ -6,10 +6,6 @@ function isLeapYear(input) {
 
 describe.only('isLeapYear', function () {
 
-	it('should be a function', function () {
-		expect(isLeapYear).to.be.instanceof(Function);
-	});
-
 	it('should return true when input is a leap year', function () {
 		expect(isLeapYear(1996)).to.be.true;
 	});
