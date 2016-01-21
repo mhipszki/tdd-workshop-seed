@@ -24,10 +24,6 @@ describe('rock paper scissors game', function () {
 		expect(game('paper', 'rock')).to.equal('P1');
 	});
 
-	it('should result in P2 winning if p1 plays scissors and p2 plays rock', function () {
-		expect(game('scissors', 'rock')).to.equal('P2');
-	});
-
 	it('should result in P1 winning if p1 plays rock and p2 plays scissors', function () {
 		expect(game('rock', 'scissors')).to.equal('P1');
 	});
@@ -35,4 +31,13 @@ describe('rock paper scissors game', function () {
 	it('should result in P1 winning if p1 plays scissors and p2 plays paper', function () {
 		expect(game('scissors', 'paper')).to.equal('P1');
 	});
+
+	it('should result in P2 winning if p1 plays scissors and p2 plays rock', function () {
+		expect(game('scissors', 'rock')).to.equal('P2');
+	});
+
+	it('should result in P2 winning if p1 plays rock and p2 plays paper', function () {
+		expect(game('rock', 'paper')).to.equal('P2');
+	});
+
 });
