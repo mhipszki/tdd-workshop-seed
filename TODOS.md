@@ -28,7 +28,7 @@ Refactor ideas:
 	+ lizard beats spock
 	+ lizard beats paper
 	+ scissors beats lizard
-	- rock beats lizard
-	- spock beats scissors
-	- spock beats rock
-	- paper beats spock
+	+ rock beats lizard
+	+ spock beats scissors
+	+ spock beats rock
+	+ paper beats spock

@@ -1,31 +1,18 @@
 'use strict';
 
-function winsOver(p2, losers) {
-	return losers.indexOf(p2) > -1;
-}
-
 function game(p1, p2) {
+	var p1WinsDictionary = {
+		'lizard': ['spock', 'paper'],
+		'scissors': ['lizard', 'paper'],
+		'rock': ['scissors', 'lizard'],
+		'spock': ['scissors', 'rock'],
+		'paper': ['spock', 'rock']
+	};
 	if (p1 === p2){
 		return 'tie';
 	}
 
-	if (p1 === 'lizard' && winsOver(p2, ['spock', 'paper']))  {
-		return 'P1';
-	}
-	if (p1 === 'scissors' && winsOver(p2, ['lizard', 'paper']))  {
-		return 'P1';
-	}
-	if (p1 === 'rock' && winsOver(p2, ['scissors', 'lizard'])) {
-		return 'P1';
-	}
-	if (p1 === 'spock' && winsOver(p2, ['scissors', 'rock'])) {
-		return 'P1';
-	}
-	if ((p1 === 'paper' && p2 === 'rock')
-	) {
-		return 'P1';
-	}
-	return 'P2';
+	return p1WinsDictionary[p1].indexOf(p2) > -1 ? 'P1' : 'P2';
 }
 
 describe('rock paper scissors game', function () {
@@ -69,6 +56,10 @@ describe('rock paper scissors game', function () {
 
 	it('should result in P1 winning if p1 plays spock and p2 plays rock', function () {
 		expect(game('spock', 'rock')).to.equal('P1');
+	});
+
+	it('should result in P1 winning if p1 plays paper and p2 plays spock', function () {
+		expect(game('paper', 'spock')).to.equal('P1');
 	});
 
 	it('should result in P2 winning if p1 plays scissors and p2 plays rock', function () {
