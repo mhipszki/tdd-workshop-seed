@@ -11,7 +11,7 @@ Examples:
 + scissors:paper = p1
 + rock:paper = p2
 + scissors:rock = p2
-- paper:scissors = p2
++ paper:scissors = p2
 
 Refactor ideas:
 - group the tests based on outcome

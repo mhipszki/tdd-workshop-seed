@@ -40,4 +40,8 @@ describe('rock paper scissors game', function () {
 		expect(game('rock', 'paper')).to.equal('P2');
 	});
 
+	it('should result in P2 winning if p1 plays paper and p2 plays scissors', function () {
+		expect(game('paper', 'scissors')).to.equal('P2');
+	});
+
 });
