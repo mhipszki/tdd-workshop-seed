@@ -1,5 +1,8 @@
 # Requirements
 
++ the game should be a function
+
+
 - 2 players
 - 3 shapes : rock, paper, scissors
 - outcomes : P1, P2, Tie
