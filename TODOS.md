@@ -1,7 +1,7 @@
 # Requirements
 
-- The function should return the game's outcome as string
 - The function should have 2 string inputs (shapes)
+- Add lizard and spock
 
 Examples:
 + rock:rock = tie
@@ -16,11 +16,11 @@ Examples:
 Refactor ideas:
 - group the tests based on outcome
 
-- 2 players
++ 2 players
 - 3 shapes : rock, paper, scissors
-- outcomes : P1, P2, Tie
++ outcomes : P1, P2, tie
 + rules :
-	- rock beats scissors
-	- scissors beats paper
-	- paper beats rock
-	- same chosen shapes is a tie
+	+ rock beats scissors
+	+ scissors beats paper
+	+ paper beats rock
+	+ same chosen shapes is a tie
